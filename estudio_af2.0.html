@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A.F PEDRAZA - Las Melodías del Amor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
+      overflow-x: hidden;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1511379938547-c1f69419868d') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      color: #FFD700;
+      z-index: 1;
+    }
+    header p {
+      font-size: 1.5rem;
+      color: #00FFFF;
+      z-index: 1;
+      margin-top: 1rem;
+      animation: fadeIn 3s ease infinite alternate;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0.5;}
+      to {opacity: 1;}
+    }
+    nav {
+      background: #000;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: #FFD700;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00FFFF;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    section h2 {
+      text-align: center;
+      color: #FFD700;
+      margin-bottom: 2rem;
+      font-family: 'Playfair Display', serif;
+    }
+    .services, .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      text-align: center;
+    }
+    .service, .work {
+      background: #1a1a1a;
+      padding: 2rem;
+      border-radius: 15px;
+      transition: transform 0.3s;
+    }
+    .service:hover, .work:hover {
+      transform: translateY(-10px);
+      background: #222;
+    }
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #555;
+      font-size: 0.9rem;
+    }
+    .music-player {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      background: #111;
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+      box-shadow: 0 0 10px #00FFFF;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+      border-radius: 10px;
+    }
+    .contact-form {
+      background: #1a1a1a;
+      padding: 2rem;
+      border-radius: 15px;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border: none;
+      border-radius: 10px;
+      background: #333;
+      color: #fff;
+    }
+    .contact-form button {
+      background: #FFD700;
+      color: #000;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 10px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .contact-form button:hover {
+      background: #00FFFF;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>A.F PEDRAZA</h1>
+    <p>Las Melodías del Amor</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#portafolio">Portafolio</a>
+    <a href="#nosotros">Sobre Nosotros</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="inicio">
+    <h2>Bienvenido a A.F PEDRAZA</h2>
+    <p>Estudio de grabación dedicado a transformar emociones en melodía. Nuestra misión es capturar la esencia de cada artista y llevar su arte al siguiente nivel.</p>
+  </section>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <div class="services">
+      <div class="service">Grabación Profesional</div>
+      <div class="service">Mezcla y Masterización</div>
+      <div class="service">Producción Musical</div>
+      <div class="service">Contratación de Grupos Musicales</div>
+    </div>
+  </section>
+
+  <section id="portafolio">
+    <h2>Portafolio</h2>
+    <div class="portfolio">
+      <div class="work">Ejemplo de Audio</div>
+      <div class="work">Video de Producción</div>
+      <div class="work">Canciones Publicadas</div>
+    </div>
+  </section>
+
+  <section id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>Desde nuestros inicios, en A.F PEDRAZA hemos creído en el poder de la música para cambiar vidas. Nuestra visión es ser el puente entre los sueños musicales y la realidad sonora. Nos guiamos por los valores de pasión, calidad y compromiso.</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <div class="contact-form">
+      <form action="#">
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Email" required>
+        <textarea rows="4" placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <p><strong>Teléfono:</strong> 7122597264</p>
+      <p><strong>Dirección:</strong> Calle Ignacio Allende #02, Col. Centro, Ixtlahuaca, EdoMex</p>
+      <p><a href="https://www.facebook.com/share/1Pe2ZTAv72/?mibextid=wwXIfr" target="_blank">Síguenos en Facebook</a></p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.7092412363185!2d-99.76940468560465!3d19.57369398680059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2183940e10bd3%3A0x59cb4c1c16d43a39!2sIgnacio%20Allende%202%2C%20Centro%2C%2050700%20Ixtlahuaca%20de%20Ray%C3%B3n%2C%20Méx.!5e0!3m2!1ses!2smx!4v1615940721970!5m2!1ses!2smx" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 A.F PEDRAZA | Todos los derechos reservados
+  </footer>
+
+  <div class="music-player">
+    <span>Escuchar</span>
+    <audio controls>
+      <source src="audio-ejemplo.mp3" type="audio/mpeg">
+      Tu navegador no soporta el reproductor de audio.
+    </audio>
+  </div>
+</body>
+</html>
